@@ -1,0 +1,7 @@
+dataset	contrast	tested	DEG	Up	Down
+BMDC	Y180_vs_Ctrl	14855	445	256	189
+BMDC	IMP321_vs_Ctrl	14855	295	163	132
+BMDC	Y180_vs_IMP321	14855	2	0	2
+BMDC	Ctrl_vs_others	14855	407	181	226
+BMDC	Y180_vs_others	14855	92	56	36
+BMDC	IMP321_vs_others	14855	14	8	6

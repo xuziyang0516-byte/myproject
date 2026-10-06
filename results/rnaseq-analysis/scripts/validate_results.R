@@ -1,0 +1,15 @@
+base<-Sys.getenv('RNASEQ_PROJECT','/workspace/rnaseq-analysis')
+for(kind in c('BMDC','PBMC')) {
+ dir<-file.path(base,'results',kind)
+ a<-readRDS(file.path(dir,'paired_analysis.rds'))
+ stopifnot(ncol(a$vst)==9,all(table(a$subject,a$group)==1),identical(as.character(DESeq2::design(a$dds)),c('~','subject + group')))
+ all<-read.delim(file.path(dir,'full_ora_all_terms.tsv'))
+ selected<-read.delim(file.path(dir,'full_ora_selected_terms.tsv'))
+ stopifnot(nrow(selected)==30,length(unique(selected$ID))==10,!anyNA(selected$Pvalue),all(selected$Count<=selected$GeneSetSize),all(selected$Count<=selected$DEGTotal))
+ direct<-phyper(all$Count-1,all$GeneSetSize,all$Universe-all$GeneSetSize,all$DEGTotal,lower.tail=FALSE)
+ stopifnot(isTRUE(all.equal(direct,all$Pvalue,tolerance=1e-12)),isTRUE(all.equal(p.adjust(all$Pvalue,'BH'),all$Padjust,tolerance=1e-12)))
+ module<-read.delim(file.path(dir,'three_group_module_statistics.tsv'))
+ stopifnot(nrow(module)==30,all(module$ResidualDF==4),isTRUE(all.equal(p.adjust(module$Pvalue,'BH'),module$Padjust,tolerance=1e-12)))
+ for(name in c(paste0(kind,'_full_pathway_ORA.pdf'),paste0(kind,'_full_pathway_ORA.png'),paste0(kind,'_paper_recommended.pdf'),paste0(kind,'_paper_recommended.png'))) stopifnot(file.info(file.path(dir,name))$size>1000)
+ cat(kind,'passed: balanced pairing; 10 pathways x 3 contrasts; hypergeometric P values; BH families; module residual DF; figure outputs.\n')
+}

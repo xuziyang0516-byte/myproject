@@ -1,0 +1,11 @@
+ID,Description,ExcelModuleGenes,MappedGenes,VariableGenes,MissingGenes
+GO:0048020,CCR chemokine receptor binding,4,4,4,
+GO:0005125,cytokine activity,21,21,21,
+mmu04657,IL-17 signaling pathway,8,8,8,
+GO:0032874,positive regulation of stress-activated MAPK cascade,3,3,3,
+GO:0090025,regulation of monocyte chemotaxis,3,3,3,
+GO:0097529,myeloid leukocyte migration,17,17,17,
+mmu04668,TNF signaling pathway,9,9,9,
+mmu04064,NF-kappa B signaling pathway,8,8,8,
+GO:0034341,response to type II interferon,5,5,5,
+GO:0070371,ERK1 and ERK2 cascade,11,11,11,

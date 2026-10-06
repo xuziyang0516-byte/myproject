@@ -1,0 +1,37 @@
+[
+  {
+    "file": "final 10 selected BMDC.xlsx",
+    "bytes": 21384,
+    "sha256": "2fe564d3e810db1ba7b2f38ef4cf7cb96386ba9407e870fd70d115bfb45db347"
+  },
+  {
+    "file": "PBMC.reads.count.txt",
+    "bytes": 3988497,
+    "sha256": "acece6f44fe6ce2966b8840a94e78f6ba077c376b17fd0abccdc70bb059cb327"
+  },
+  {
+    "file": "BMDC.reads.count.txt",
+    "bytes": 2757662,
+    "sha256": "6f43153031e98f3b2ab2973ab3e14385aa3a3cc37b6a5ceb90c473855ba5bce3"
+  },
+  {
+    "file": "final 10 selected.xlsx",
+    "bytes": 11949320,
+    "sha256": "ff74319cc9624807028df2bdbff2f6aec3824eaea53f480b55b1953002a5ba3a"
+  },
+  {
+    "file": "BMDC 基因差异图 加上Y180vsIMP321.R",
+    "bytes": 37766,
+    "sha256": "f03406da5374436ef33aa74796413a78bf1cca746f3ee20d3276479b18abc899"
+  },
+  {
+    "file": "PBMC 基因差异图 加上Y180vsIMP321.R",
+    "bytes": 104663,
+    "sha256": "a2d9bf603ce5c3164816ae54dd7ae66b66e81a1222dc350a295fa91761052511"
+  },
+  {
+    "file": "气泡图.R",
+    "bytes": 29574,
+    "sha256": "26a2e3dd674c79af85014a7f6bde80bb315341e9fd9b8cc03db8661c0d9f905c"
+  }
+]

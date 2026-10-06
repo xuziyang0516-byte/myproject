@@ -1,0 +1,11 @@
+ID	Description	Direction	SourceSheet
+GO:0048020	CCR chemokine receptor binding	Up	Sheet4
+GO:0005125	cytokine activity	Up	Sheet4
+mmu04657	IL-17 signaling pathway	Up	Sheet4
+GO:0032874	positive regulation of stress-activated MAPK cascade	Up	Sheet4
+GO:0090025	regulation of monocyte chemotaxis	Up	Sheet4
+GO:0097529	myeloid leukocyte migration	Up	Sheet4
+mmu04668	TNF signaling pathway	Up	Sheet4
+mmu04064	NF-kappa B signaling pathway	Up	Sheet4
+GO:0034341	response to type II interferon	Up	Sheet4
+GO:0070371	ERK1 and ERK2 cascade	Up	Sheet4
